@@ -1,50 +1,57 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Form from "react-bootstrap/Form";
+import reactLogo from "../assets/react.svg";
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="dark" variant="dark" sticky="top">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        {/* React Logo */}
+        <Navbar.Brand href="#" className="d-flex align-items-center">
+          <img
+            src={reactLogo}
+            alt="React Logo"
+            width="30"
+            height="30"
+            className="me-2"
+          />
+          React
+        </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
+
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
-          </Nav>
-
-          <Form className="d-flex">
+          {/* Search bar (LEFT, after logo) */}
+          <Form className="d-flex ms-3 me-4" style={{ maxWidth: "220px" }}>
             <Form.Control
               type="search"
               placeholder="Search"
-              className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
           </Form>
+
+          {/* Center links */}
+          <Nav className="me-auto">
+            <Nav.Link href="#">Learn</Nav.Link>
+            <Nav.Link href="#">Reference</Nav.Link>
+            <Nav.Link href="#">Community</Nav.Link>
+            <Nav.Link href="#">Blog</Nav.Link>
+          </Nav>
+
+          {/* Right icons */}
+          <Nav className="align-items-center">
+            <Nav.Link href="#" title="Theme">
+              🌙
+            </Nav.Link>
+            <Nav.Link href="#" title="Language">
+              🌐
+            </Nav.Link>
+            <Nav.Link href="#" title="GitHub">
+              🐙
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
