@@ -1,47 +1,86 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Hero = () => {
   return (
-    <section className="hero-section">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-8 col-md-10 text-center">
-            {/* React Logo */}
-            <div className="hero-logo mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-11.5 -10.23174 23 20.46348"
-                className="react-logo"
-              >
-                <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
-                <g stroke="#61dafb" strokeWidth="1" fill="none">
-                  <ellipse rx="11" ry="4.2" />
-                  <ellipse rx="11" ry="4.2" transform="rotate(60)" />
-                  <ellipse rx="11" ry="4.2" transform="rotate(120)" />
-                </g>
-              </svg>
+    <section className="hero-section" id="home">
+      {/* Decorative Elements */}
+      <div className="decorative-clouds">
+        <div className="cloud cloud-1"></div>
+        <div className="cloud cloud-2"></div>
+      </div>
+      <div className="decorative-dots">
+        <span className="dot dot-1"></span>
+        <span className="dot dot-2"></span>
+        <span className="dot dot-3"></span>
+      </div>
+      <div className="decorative-leaves">
+        <div className="leaf leaf-1"></div>
+        <div className="leaf leaf-2"></div>
+        <div className="leaf leaf-3"></div>
+      </div>
+
+      <Container>
+        <Row className="align-items-center min-vh-100">
+          {/* Left Illustration */}
+          <Col lg={3} md={4} className="d-none d-md-block">
+            <div className="hero-illustration-left">
+              <img
+                src="https://via.placeholder.com/300x300/FFE5E5/FF6B6B?text=Couple+on+Bike"
+                alt="Couple on bike"
+                className="img-fluid"
+                style={{ maxWidth: "280px" }}
+              />
             </div>
+          </Col>
 
-            {/* Main Heading */}
-            <h1 className="hero-title mb-3">React</h1>
+          {/* Center Content */}
+          <Col lg={6} md={4} className="text-center">
+            <div className="hero-content">
+              <div className="hero-icon mb-3">
+                <img
+                  src="https://via.placeholder.com/60x60/FF6B6B/FFFFFF?text=🦋"
+                  alt="Butterfly"
+                  style={{ width: "50px" }}
+                />
+              </div>
 
-            {/* Subtitle */}
-            <p className="hero-subtitle mb-5">
-              The library for web and native user interfaces
-            </p>
+              <h1 className="hero-title mb-3">
+                Marée<span className="butterfly-accent">🦋</span>
+              </h1>
 
-            {/* CTA Buttons */}
-            <div className="hero-buttons d-flex justify-content-center gap-3 flex-wrap">
-              <button className="btn btn-primary btn-lg hero-btn-primary">
-                Learn React
-              </button>
-              <button className="btn btn-outline-light btn-lg hero-btn-secondary">
-                API Reference
-              </button>
+              <p className="hero-subtitle mb-4">
+                Welcome to Marée, a brand new illustration & design portfolio
+                just
+                <br />
+                waiting for your work to start populating its templates!
+              </p>
+
+              <Button className="btn-purchase">PURCHASE</Button>
             </div>
-          </div>
-        </div>
+          </Col>
+
+          {/* Right Illustration */}
+          <Col lg={3} md={4} className="d-none d-md-block">
+            <div className="hero-illustration-right">
+              <img
+                src="https://via.placeholder.com/250x250/E8F5E9/4CAF50?text=Trees"
+                alt="Trees"
+                className="img-fluid"
+                style={{ maxWidth: "220px" }}
+              />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* Top Right Corner Icon */}
+      <div className="corner-icon">
+        <img
+          src="https://via.placeholder.com/80x80/FF6B6B/FFFFFF?text=🍃"
+          alt="Leaf icon"
+          style={{ width: "60px" }}
+        />
       </div>
     </section>
   );
