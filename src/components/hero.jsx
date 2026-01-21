@@ -1,6 +1,5 @@
-import React from "react";
-import "../assets/style.css";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Hero = () => {
   return (
