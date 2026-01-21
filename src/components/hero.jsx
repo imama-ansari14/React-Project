@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/style.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Hero = () => {
@@ -10,9 +11,9 @@ const Hero = () => {
         <div className="cloud cloud-2"></div>
       </div>
       <div className="decorative-dots">
-        <span className="dot dot-1"></span>
-        <span className="dot dot-2"></span>
-        <span className="dot dot-3"></span>
+        <span className="dot dot-1">h</span>
+        <span className="dot dot-2">hiijuhnjn</span>
+        <span className="dot dot-3">h</span>
       </div>
       <div className="decorative-leaves">
         <div className="leaf leaf-1"></div>
@@ -26,7 +27,7 @@ const Hero = () => {
           <Col lg={3} md={4} className="d-none d-md-block">
             <div className="hero-illustration-left">
               <img
-                src="https://via.placeholder.com/300x300/FFE5E5/FF6B6B?text=Couple+on+Bike"
+                src=".../../public/images/cycle.png"
                 alt="Couple on bike"
                 className="img-fluid"
                 style={{ maxWidth: "280px" }}
@@ -64,7 +65,7 @@ const Hero = () => {
           <Col lg={3} md={4} className="d-none d-md-block">
             <div className="hero-illustration-right">
               <img
-                src="https://via.placeholder.com/250x250/E8F5E9/4CAF50?text=Trees"
+                src=".../../public/images/tree.png"
                 alt="Trees"
                 className="img-fluid"
                 style={{ maxWidth: "220px" }}
@@ -77,8 +78,8 @@ const Hero = () => {
       {/* Top Right Corner Icon */}
       <div className="corner-icon">
         <img
-          src="https://via.placeholder.com/80x80/FF6B6B/FFFFFF?text=🍃"
-          alt="Leaf icon"
+          src=".../../public/images/bird.png"
+          alt="Bird"
           style={{ width: "60px" }}
         />
       </div>
