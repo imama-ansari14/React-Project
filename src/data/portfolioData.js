@@ -3,28 +3,28 @@ export const portfolioItems = [
     id: 1,
     title: "Main Home",
     subtitle: "Projects made with love",
-    image: "https://via.placeholder.com/400x300/FFE5E5/333333?text=Main+Home",
+    image: "../../public/images/portfolio-1.jpg",
     bgColor: "#FFF5F5"
   },
   {
     id: 2,
     title: "Floating Portfolio",
     subtitle: "hello",
-    image: "https://via.placeholder.com/400x300/FFF8DC/333333?text=Floating+Portfolio",
+    image: "../../public/images/portfolio-2.jpg",
     bgColor: "#FFFEF7"
   },
   {
     id: 3,
     title: "Portfolio Pinterest",
     subtitle: "Grid layout",
-    image: "https://via.placeholder.com/400x300/F0F8FF/333333?text=Portfolio+Pinterest",
+    image: "../../public/images/portfolio-3.jpg",
     bgColor: "#F8FCFF"
   },
   {
     id: 4,
     title: "Animated Slider",
     subtitle: "Logo design",
-    image: "https://via.placeholder.com/400x300/E8F5E9/333333?text=Animated+Slider",
+    image: "../../public/images/portfolio-4.jpg",
     bgColor: "#F1F8F4"
   },
   {

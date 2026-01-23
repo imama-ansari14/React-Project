@@ -24,7 +24,6 @@ html {
 .hero-section {
   position: relative;
   background: linear-gradient(180deg, #FFF5F5 0%, #FFFFFF 100%);
-  padding-top: 80px;
   overflow: hidden;
 }
 
