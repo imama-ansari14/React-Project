@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-// import PortfolioCard from './PortfolioCard';
-// import { portfolioItems } from '../data/portfolioData';
+import PortfolioCard from './PortfolioCard';
+import { portfolioItems } from '../data/portfolioData';
 
 const PortfolioGrid = () => {
   return (

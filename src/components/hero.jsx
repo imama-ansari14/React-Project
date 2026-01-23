@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Hero = () => {
   return (
@@ -10,9 +11,9 @@ const Hero = () => {
         <div className="cloud cloud-2"></div>
       </div>
       <div className="decorative-dots">
-        <span className="dot dot-1">h</span>
-        <span className="dot dot-2">hiijuhnjn</span>
-        <span className="dot dot-3">h</span>
+        <span className="dot dot-1"></span>
+        <span className="dot dot-2"></span>
+        <span className="dot dot-3"></span>
       </div>
       <div className="decorative-leaves">
         <div className="leaf leaf-1"></div>

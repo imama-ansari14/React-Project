@@ -2,8 +2,8 @@ import React from "react";
 import NavigationBar from "./components/navbar";
 import Hero from "./components/Hero";
 import PortfolioGrid from "./components/PortfolioGrid";
-// import BottomCTA from "./components/BottomCTA";
-// import Footer from "./components/Footer";
+import BottomCTA from "./components/BottomCTA";
+import Footer from "./components/Footer";
 import "./assets/style.css";
 
 function App() {
