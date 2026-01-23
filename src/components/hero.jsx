@@ -57,7 +57,7 @@ const Hero = () => {
                 waiting for your work to start populating its templates!
               </p>
 
-              <Button className="btn-purchase">PURCHASE</Button>
+              <Button className="btn-purchase ">PURCHASE</Button>
             </div>
           </Col>
 

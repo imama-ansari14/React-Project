@@ -31,35 +31,14 @@ export const portfolioItems = [
     id: 5,
     title: "Portfolio Metro",
     subtitle: "Creative showcase",
-    image: "https://via.placeholder.com/400x300/FFF3E0/333333?text=Portfolio+Metro",
+    image: "../../public/images/portfolio-5.jpg",
     bgColor: "#FFF9F0"
   },
   {
     id: 6,
     title: "Portfolio Gallery",
     subtitle: "Image collection",
-    image: "https://via.placeholder.com/400x300/F3E5F5/333333?text=Portfolio+Gallery",
+    image: "../../public/images/portfolio-6.jpg",
     bgColor: "#FBF5FC"
-  },
-  {
-    id: 7,
-    title: "Interactive Links",
-    subtitle: "Love songs, Dance baby",
-    image: "https://via.placeholder.com/400x300/FFE5E5/333333?text=Interactive+Links",
-    bgColor: "#FFF5F5"
-  },
-  {
-    id: 8,
-    title: "Split Slider Showcase",
-    subtitle: "Know your goals",
-    image: "https://via.placeholder.com/400x300/FFFDE7/333333?text=Split+Slider",
-    bgColor: "#FFFEF5"
-  },
-  {
-    id: 9,
-    title: "Portfolio Carousel",
-    subtitle: "Visual stories",
-    image: "https://via.placeholder.com/400x300/E8EAF6/333333?text=Portfolio+Carousel",
-    bgColor: "#F5F6FA"
   }
 ];
