@@ -1,5 +1,4 @@
 import React from "react";
-import NavigationBar from "./components/navbar";
 import Hero from "./components/Hero";
 import PortfolioGrid from "./components/PortfolioGrid";
 import BottomCTA from "./components/BottomCTA";
@@ -9,11 +8,10 @@ import "./assets/style.css";
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
       <Hero />
       <PortfolioGrid />
-      {/* <BottomCTA />
-      <Footer /> */}
+      <BottomCTA />
+      <Footer />
     </div>
   );
 }
