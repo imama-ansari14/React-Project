@@ -52,8 +52,8 @@ html {
 
 .btn-purchase {
   background-color: transparent;
-  border: 2px solid #2C2C2C;
-  color: #2C2C2C;
+  border: 2px solid #e47c77;
+  color: black;
   padding: 12px 40px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -63,8 +63,9 @@ html {
 }
 
 .btn-purchase:hover {
-  background-color: #2C2C2C;
-  color: white;
+  background-color: #da8d89;
+  border: 2px solid #e47c77;
+  color: black;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -303,12 +304,14 @@ html {
 .heart-1 {
   top: 20%;
   right: 15%;
+  background-color: red;
   animation-delay: 0.5s;
 }
 
 .heart-2 {
   bottom: 30%;
   left: 10%;
+  padding: 20px;
   animation-delay: 1s;
 }
 

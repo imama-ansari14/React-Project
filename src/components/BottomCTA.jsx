@@ -31,7 +31,7 @@ const BottomCTA = () => {
           <Col lg={6} className="text-center">
             <div className="cta-illustration">
               <img 
-                src="https://via.placeholder.com/400x400/FFF8DC/333333?text=Person+with+Guitar" 
+                src=".../../public/images/cycle.png" 
                 alt="Person with guitar"
                 className="img-fluid"
                 style={{ maxWidth: '350px' }}
