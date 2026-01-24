@@ -16,9 +16,9 @@ const Hero = () => {
         <span className="dot dot-3"></span>
       </div>
       <div className="decorative-leaves">
-        <div className="leaf leaf-1"></div>
-        <div className="leaf leaf-2"></div>
-        <div className="leaf leaf-3"></div>
+        <div className="leaf leaf-1"><img src=".../../public/images/leaf.png" alt="" /></div>
+        <div className="leaf leaf-2"> <img src=".../../public/images/leaf2.png" alt="leaf" /></div>
+        <div className="leaf leaf-3"><img src=".../../public/images/leaf2.png" alt="leaf" /></div>
       </div>
 
       <Container>
