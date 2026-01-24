@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-// ✅ Imported images 
+// ✅ Imported images
 import leaf from "/public/images/leaf.png";
 import leaf2 from "/public/images/leaf2.png";
 import cycle from "/public/images/cycle.png";
