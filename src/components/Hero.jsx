@@ -40,14 +40,14 @@ const Hero = () => {
             <div className="hero-content">
               <div className="hero-icon mb-3">
                 <img
-                  src="https://via.placeholder.com/60x60/FF6B6B/FFFFFF?text=🦋"
+                  src=".../../public/images/leaf.png"
                   alt="Butterfly"
                   style={{ width: "50px" }}
                 />
               </div>
 
               <h1 className="hero-title mb-3">
-                Marée<span className="butterfly-accent">🦋</span>
+                Marée<span className="butterfly-accent"></span>
               </h1>
 
               <p className="hero-subtitle mb-4">
@@ -57,7 +57,7 @@ const Hero = () => {
                 waiting for your work to start populating its templates!
               </p>
 
-              <Button className="btn-purchase">PURCHASE</Button>
+              <Button className="btn-purchase link-opacity-0">PURCHASE</Button>
             </div>
           </Col>
 
