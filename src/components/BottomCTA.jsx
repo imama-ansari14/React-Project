@@ -13,10 +13,6 @@ const BottomCTA = () => {
         <span className="dot-bottom dot-bottom-1"></span>
         <span className="dot-bottom dot-bottom-2"></span>
       </div>
-      <div className="decorative-clouds-bottom">
-        <div className="cloud-bottom cloud-bottom-1"></div>
-      </div>
-
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
@@ -45,6 +41,8 @@ const BottomCTA = () => {
       <div className="floating-hearts">
         <div className="heart heart-1">❤️</div>
         <div className="heart heart-2">🦋</div>
+        <div className="heart heart-3">❤️</div>
+        <div className="heart heart-4">🦋</div>
       </div>
     </section>
   );

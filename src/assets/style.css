@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap");
 
 /* Global Styles */
 * {
@@ -9,10 +9,10 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333;
   overflow-x: hidden;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 /* Smooth Scrolling */
@@ -23,18 +23,30 @@ html {
 /* Hero Section */
 .hero-section {
   position: relative;
-  background: linear-gradient(180deg, #FFF5F5 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #fff5f5 0%, #ffffff 100%);
   overflow: hidden;
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 5rem;
   font-weight: 400;
   font-style: italic;
-  color: #2C2C2C;
+  color: #2c2c2c;
   line-height: 1.2;
   position: relative;
+}
+
+.hero-decorations {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 .butterfly-accent {
@@ -71,84 +83,75 @@ html {
 }
 
 /* Decorative Elements */
-.decorative-clouds,
-.decorative-dots,
-.decorative-leaves {
-  position: absolute;
-  pointer-events: none;
-}
-
 .cloud {
   width: 80px;
   height: 40px;
-  background-color: #FFD4D4;
   border-radius: 50%;
   opacity: 0.4;
   position: absolute;
+  pointer-events: none;
 }
 
 .cloud-1 {
   top: 15%;
   left: 15%;
+  background-color: #ffd4d4;
 }
 
 .cloud-2 {
   top: 20%;
   right: 20%;
-  background-color: #D4E7FF;
+  background-color: #d4e7ff;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #FFC4D1;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   position: absolute;
   opacity: 0.5;
+  pointer-events: none;
 }
-
 .dot-1 {
-  top: 25%;
-  left: 10%;
+  top: 28%;
+  left: 46%;
+  background-color: #F0817B;
 }
 
 .dot-2 {
-  top: 35%;
-  right: 15%;
-  background-color: #FFE5B4;
+  top: 40%;
+  left: 59%;
+  background-color: #F0817B;
 }
 
 .dot-3 {
-  bottom: 30%;
-  left: 20%;
-  background-color: #E5F0E5;
+  top: 80%;
+  left: 48%;
+  background-color: #F0817B;
 }
 
 .leaf {
   width: 60px;
   height: 60px;
-  background-color: #D4E7D4;
   border-radius: 0 50% 0 50%;
-  opacity: 0.3;
   position: absolute;
+  pointer-events: none;
 }
 
 .leaf-1 {
   top: 40%;
-  right: 5%;
+  right: 10%;
   transform: rotate(45deg);
 }
 
 .leaf-2 {
   bottom: 20%;
   right: 10%;
-  background-color: #E8E8D4;
 }
 
 .leaf-3 {
-  bottom: 35%;
+  bottom: 15%;
   left: 8%;
-  background-color: #D4E7FF;
 }
 
 .corner-icon {
@@ -159,7 +162,8 @@ html {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -169,7 +173,7 @@ html {
 
 /* Portfolio Section */
 .portfolio-section {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Portfolio Card */
@@ -206,7 +210,7 @@ html {
 
 /* Title */
 .portfolio-card-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.1rem;
   font-style: italic;
   font-weight: 400;
@@ -215,104 +219,93 @@ html {
 
 /* Bottom CTA Section */
 .bottom-cta-section {
-  background: linear-gradient(180deg, #FFFFFF 0%, #FFF5F5 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #fff5f5 100%);
   padding: 100px 0;
   position: relative;
   overflow: hidden;
 }
 
 .cta-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
-  color: #2C2C2C;
+  color: #2c2c2c;
   line-height: 1.6;
-}
-
-.decorative-leaves-bottom,
-.decorative-dots-bottom,
-.decorative-clouds-bottom {
-  position: absolute;
-  pointer-events: none;
 }
 
 .leaf-bottom {
   width: 80px;
   height: 80px;
-  background-color: #D4E7D4;
   border-radius: 0 50% 0 50%;
   opacity: 0.2;
   position: absolute;
+  pointer-events: none;
 }
 
 .leaf-bottom-1 {
   top: 10%;
   left: 5%;
   transform: rotate(-45deg);
+  background-color: #d4e7d4;
 }
 
 .leaf-bottom-2 {
   bottom: 10%;
   right: 5%;
-  background-color: #E8E8D4;
+  background-color: #e8e8d4;
   transform: rotate(45deg);
 }
 
 .dot-bottom {
   width: 15px;
   height: 15px;
-  background-color: #FFC4D1;
   border-radius: 50%;
   position: absolute;
   opacity: 0.4;
+  pointer-events: none;
 }
 
 .dot-bottom-1 {
   top: 20%;
   right: 10%;
+  background-color: #fa9db1;
 }
 
 .dot-bottom-2 {
   bottom: 25%;
-  left: 15%;
-  background-color: #FFE5B4;
-}
-
-.cloud-bottom {
-  width: 100px;
-  height: 50px;
-  background-color: #FFD4D4;
-  border-radius: 50%;
-  opacity: 0.3;
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
-}
-
-.floating-hearts {
-  position: absolute;
-  pointer-events: none;
+  left: 45%;
+  background-color: #fa9db1;
 }
 
 .heart {
   position: absolute;
-  font-size: 2rem;
-  opacity: 0.5;
-  animation: float 4s ease-in-out infinite;
+  font-size: 2.4rem;
+  color: #ff7a7a;
+  opacity: 0.65;
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .heart-1 {
-  top: 20%;
-  right: 15%;
-  background-color: red;
+  top: 30%;
+  left: 55%;
   animation-delay: 0.5s;
 }
 
 .heart-2 {
-  bottom: 30%;
+  top: 85%;
+  left: 85%;
+  animation-delay: 1.5s;
+}
+.heart-3 {
+  top: 85%;
+  left: 25%;
+  animation-delay: 1.5s;
+}
+.heart-4 {
+  top: 10%;
   left: 10%;
-  padding: 20px;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 /* Responsive Design */
@@ -320,11 +313,11 @@ html {
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .cta-title {
     font-size: 1.5rem;
   }
-  
+
   .corner-icon {
     display: none;
   }
@@ -334,15 +327,15 @@ html {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 0.9rem;
   }
-  
+
   .cta-title {
     font-size: 1.25rem;
   }
-  
+
   .decorative-clouds,
   .decorative-leaves {
     display: none;
@@ -353,7 +346,7 @@ html {
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .butterfly-accent {
     font-size: 2rem;
   }
