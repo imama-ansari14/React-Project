@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
+// ✅ Import image properly
+import cycle from "/public/images/cycle.png";
+
 const BottomCTA = () => {
   return (
     <section className="bottom-cta-section py-5 position-relative">
@@ -9,10 +12,12 @@ const BottomCTA = () => {
         <div className="leaf-bottom leaf-bottom-1"></div>
         <div className="leaf-bottom leaf-bottom-2"></div>
       </div>
+
       <div className="decorative-dots-bottom">
         <span className="dot-bottom dot-bottom-1"></span>
         <span className="dot-bottom dot-bottom-2"></span>
       </div>
+
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
@@ -24,12 +29,14 @@ const BottomCTA = () => {
                 personality!
               </em>
             </h2>
+
             <Button className="btn-purchase">PURCHASE</Button>
           </Col>
+
           <Col lg={6} className="text-center">
             <div className="cta-illustration">
               <img
-                src="/images/guitar-person.png"
+                src={cycle}
                 alt="Person with guitar"
                 className="img-fluid"
                 style={{ maxWidth: "350px" }}
