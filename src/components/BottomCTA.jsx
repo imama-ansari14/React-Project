@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 const BottomCTA = () => {
   return (
@@ -17,20 +17,22 @@ const BottomCTA = () => {
         <Row className="align-items-center">
           <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
             <h2 className="cta-title mb-3">
-              Your brand new folio with a professional layout<br />
-              collection and quite a cheerful <em style={{ fontFamily: "'Playfair Display', serif" }}>personality!</em>
+              Your brand new folio with a professional layout
+              <br />
+              collection and quite a cheerful{" "}
+              <em style={{ fontFamily: "'Playfair Display', serif" }}>
+                personality!
+              </em>
             </h2>
-            <Button className="btn-purchase">
-              PURCHASE
-            </Button>
+            <Button className="btn-purchase">PURCHASE</Button>
           </Col>
           <Col lg={6} className="text-center">
             <div className="cta-illustration">
-              <img 
-                src=".../../public/images/cycle.png" 
+              <img
+                src="/images/guitar-person.png"
                 alt="Person with guitar"
                 className="img-fluid"
-                style={{ maxWidth: '350px' }}
+                style={{ maxWidth: "350px" }}
               />
             </div>
           </Col>

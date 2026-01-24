@@ -16,9 +16,15 @@ const Hero = () => {
         <span className="dot dot-3"></span>
       </div>
       <div className="decorative-leaves">
-        <div className="leaf leaf-1"><img src=".../../public/images/leaf.png" alt="" /></div>
-        <div className="leaf leaf-2"> <img src=".../../public/images/leaf2.png" alt="leaf" /></div>
-        <div className="leaf leaf-3"><img src=".../../public/images/leaf2.png" alt="leaf" /></div>
+        <div className="leaf leaf-1">
+          <img src="/images/leaf.png" alt="leaf" />
+        </div>
+        <div className="leaf leaf-2">
+          <img src="/images/leaf2.png" alt="leaf" />
+        </div>
+        <div className="leaf leaf-3">
+          <img src="/images/leaf2.png" alt="leaf" />
+        </div>
       </div>
 
       <Container>
@@ -27,7 +33,7 @@ const Hero = () => {
           <Col lg={3} md={4} className="d-none d-md-block">
             <div className="hero-illustration-left">
               <img
-                src=".../../public/images/cycle.png"
+                src="/images/cycle.png"
                 alt="Couple on bike"
                 className="img-fluid"
                 style={{ maxWidth: "280px" }}
@@ -40,14 +46,14 @@ const Hero = () => {
             <div className="hero-content">
               <div className="hero-icon mb-3">
                 <img
-                  src=".../../public/images/leaf.png"
+                  src="/images/leaf.png"
                   alt="Butterfly"
                   style={{ width: "50px" }}
                 />
               </div>
 
               <h1 className="hero-title mb-3">
-                Marée<span className="butterfly-accent"></span>
+                Marée<span className="butterfly-accent">🦋</span>
               </h1>
 
               <p className="hero-subtitle mb-4">
@@ -57,7 +63,7 @@ const Hero = () => {
                 waiting for your work to start populating its templates!
               </p>
 
-              <Button className="btn-purchase link-opacity-0">PURCHASE</Button>
+              <Button className="btn-purchase">PURCHASE</Button>
             </div>
           </Col>
 
@@ -65,7 +71,7 @@ const Hero = () => {
           <Col lg={3} md={4} className="d-none d-md-block">
             <div className="hero-illustration-right">
               <img
-                src=".../../public/images/tree.png"
+                src="/images/tree.png"
                 alt="Trees"
                 className="img-fluid"
                 style={{ maxWidth: "220px" }}
@@ -77,11 +83,7 @@ const Hero = () => {
 
       {/* Top Right Corner Icon */}
       <div className="corner-icon">
-        <img
-          src=".../../public/images/bird.png"
-          alt="Bird"
-          style={{ width: "60px" }}
-        />
+        <img src="/images/bird.png" alt="Bird" style={{ width: "60px" }} />
       </div>
     </section>
   );
