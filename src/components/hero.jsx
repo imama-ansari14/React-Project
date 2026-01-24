@@ -10,11 +10,13 @@ const Hero = () => {
         <div className="cloud cloud-1"></div>
         <div className="cloud cloud-2"></div>
       </div>
+
       <div className="decorative-dots">
         <span className="dot dot-1"></span>
         <span className="dot dot-2"></span>
         <span className="dot dot-3"></span>
       </div>
+
       <div className="decorative-leaves">
         <div className="leaf leaf-1">
           <img src="/images/leaf.png" alt="leaf" />
@@ -31,29 +33,23 @@ const Hero = () => {
         <Row className="align-items-center min-vh-100">
           {/* Left Illustration */}
           <Col lg={3} md={4} className="d-none d-md-block">
-            <div className="hero-illustration-left">
-              <img
-                src="/images/cycle.png"
-                alt="Couple on bike"
-                className="img-fluid"
-                style={{ maxWidth: "280px" }}
-              />
-            </div>
+            <img
+              src="/images/cycle.png"
+              alt="Couple on bike"
+              className="img-fluid"
+              style={{ maxWidth: "280px" }}
+            />
           </Col>
 
           {/* Center Content */}
           <Col lg={6} md={4} className="text-center">
             <div className="hero-content">
               <div className="hero-icon mb-3">
-                <img
-                  src="/images/leaf.png"
-                  alt="Butterfly"
-                  style={{ width: "50px" }}
-                />
+                <img src="/images/leaf.png" alt="icon" width="50" />
               </div>
 
               <h1 className="hero-title mb-3">
-                Marée<span className="butterfly-accent">🦋</span>
+                Marée<span className="butterfly-accent"></span>
               </h1>
 
               <p className="hero-subtitle mb-4">
@@ -69,21 +65,19 @@ const Hero = () => {
 
           {/* Right Illustration */}
           <Col lg={3} md={4} className="d-none d-md-block">
-            <div className="hero-illustration-right">
-              <img
-                src="/images/tree.png"
-                alt="Trees"
-                className="img-fluid"
-                style={{ maxWidth: "220px" }}
-              />
-            </div>
+            <img
+              src="/images/tree.png"
+              alt="Trees"
+              className="img-fluid"
+              style={{ maxWidth: "220px" }}
+            />
           </Col>
         </Row>
       </Container>
 
-      {/* Top Right Corner Icon */}
+      {/* Corner Icon */}
       <div className="corner-icon">
-        <img src="/images/bird.png" alt="Bird" style={{ width: "60px" }} />
+        <img src="/images/bird.png" alt="Bird" width="60" />
       </div>
     </section>
   );
