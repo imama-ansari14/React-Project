@@ -1,6 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
+// ✅ Imported images (GOOD)
+import leaf from "/public/images/leaf.png";
+import leaf2 from "/public/images/leaf2.png";
+import cycle from "/public/images/cycle.png";
+import tree from "/public/images/tree.png";
+import bird from "/public/images/bird.png";
 
 const Hero = () => {
   return (
@@ -10,40 +16,42 @@ const Hero = () => {
         <div className="cloud cloud-1"></div>
         <div className="cloud cloud-2"></div>
       </div>
+
       <div className="decorative-dots">
         <span className="dot dot-1"></span>
         <span className="dot dot-2"></span>
         <span className="dot dot-3"></span>
       </div>
+
       <div className="decorative-leaves">
-        <div className="leaf leaf-1"><img src=".../../public/images/leaf.png" alt="" /></div>
-        <div className="leaf leaf-2"> <img src=".../../public/images/leaf2.png" alt="leaf" /></div>
-        <div className="leaf leaf-3"><img src=".../../public/images/leaf2.png" alt="leaf" /></div>
+        <div className="leaf leaf-1">
+          <img src={leaf} alt="leaf" />
+        </div>
+        <div className="leaf leaf-2">
+          <img src={leaf2} alt="leaf" />
+        </div>
+        <div className="leaf leaf-3">
+          <img src={leaf2} alt="leaf" />
+        </div>
       </div>
 
       <Container>
         <Row className="align-items-center min-vh-100">
           {/* Left Illustration */}
           <Col lg={3} md={4} className="d-none d-md-block">
-            <div className="hero-illustration-left">
               <img
-                src=".../../public/images/cycle.png"
+              src={cycle}
                 alt="Couple on bike"
                 className="img-fluid"
                 style={{ maxWidth: "280px" }}
               />
-            </div>
           </Col>
 
           {/* Center Content */}
           <Col lg={6} md={4} className="text-center">
             <div className="hero-content">
               <div className="hero-icon mb-3">
-                <img
-                  src=".../../public/images/leaf.png"
-                  alt="Butterfly"
-                  style={{ width: "50px" }}
-                />
+                <img src={leaf} alt="icon" width="50" />
               </div>
 
               <h1 className="hero-title mb-3">
@@ -57,31 +65,25 @@ const Hero = () => {
                 waiting for your work to start populating its templates!
               </p>
 
-              <Button className="btn-purchase link-opacity-0">PURCHASE</Button>
+              <Button className="btn-purchase">PURCHASE</Button>
             </div>
           </Col>
 
           {/* Right Illustration */}
           <Col lg={3} md={4} className="d-none d-md-block">
-            <div className="hero-illustration-right">
               <img
-                src=".../../public/images/tree.png"
+              src={tree}
                 alt="Trees"
                 className="img-fluid"
                 style={{ maxWidth: "220px" }}
               />
-            </div>
           </Col>
         </Row>
       </Container>
 
-      {/* Top Right Corner Icon */}
+      {/* Corner Icon */}
       <div className="corner-icon">
-        <img
-          src=".../../public/images/bird.png"
-          alt="Bird"
-          style={{ width: "60px" }}
-        />
+        <img src={bird} alt="Bird" width="60" />
       </div>
     </section>
   );
