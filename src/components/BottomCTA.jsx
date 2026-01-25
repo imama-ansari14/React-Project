@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-
 // ✅ Import image properly
 import cycle from "/public/images/cycle.png";
 
